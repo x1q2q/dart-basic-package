@@ -1,4 +1,11 @@
-class CreateTask {}
+class CreateTask {
+  List _defaultTask = [];
+  CreateTask.create() {
+    List tasks = ["wake up", "eat", "sleep"];
+    _defaultTask = tasks;
+  }
+  List get task => _defaultTask;
+}
 
 class ShowTask {
   List _tasks = [];
